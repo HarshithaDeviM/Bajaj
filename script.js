@@ -1,7 +1,7 @@
 function sendData() {
     const jsonInput = document.getElementById("jsonInput").value;
 
-    fetch('http://127.0.0.1:5000/bfhl', {
+    fetch('https://bajaj-m5jh.onrender.com/bfhl', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
