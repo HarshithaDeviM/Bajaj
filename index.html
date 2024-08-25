@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backend API Tester</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Backend API Tester</h1>
+
+    <textarea id="jsonInput" rows="5" placeholder='Enter JSON like {"data": ["A", "B", "1"]}'></textarea>
+    <br>
+    <button onclick="sendData()">Submit</button>
+
+    <h2>Response Filters:</h2>
+<div id="responseFilter">
+    <label><input type="checkbox" value="numbers"> Numbers</label><br>
+    <label><input type="checkbox" value="alphabets"> Alphabets</label><br>
+    <label><input type="checkbox" value="highestLowercaseAlphabet"> Highest Lowercase Alphabet</label>
+</div>
+
+
+    <h2>Response:</h2>
+    <pre id="responseOutput"></pre>
+
+    <script src="script.js"></script>
+</body>
+</html>
